@@ -16,7 +16,7 @@ public class HandleService extends Service {
             Bundle fromActivity=msg.getData();
             if(fromActivity !=null) { 
                 String     username=fromActivity.getString("username");
-                Toast.makeText(HandleService.this, "Welcome "+username, Toast.LENGTH_LONG).show();
+                Toast.makeText(HandleService.this, "Welcome " + username, Toast.LENGTH_LONG).show();
             } 
             super.handleMessage(msg);
         }
